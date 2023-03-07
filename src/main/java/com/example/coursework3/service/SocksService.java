@@ -17,8 +17,6 @@ private static Map<Sock,Integer>socksMap=new HashMap<>();
 
 
 private final SocksMapper socksMapper;
-private final FileService fileService;
-
 public void addSocks(SockShippingDto socksShippingDto){
     Sock sock=socksMapper.toSocks(socksShippingDto);
     if (socksMap.containsKey(sock)){
